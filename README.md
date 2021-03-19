@@ -1,4 +1,5 @@
-# vim config
-vim config: `.vimrc`
+# Vim & IdeaVim config
 
-ideavim config: `.ideavimrc`
+[Vim Config](.vimrc)
+
+[Idea Vim Config](.ideavimrc)
