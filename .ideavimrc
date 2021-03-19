@@ -28,6 +28,9 @@ vnoremap L $
 vnoremap H ^
 nnoremap ; :
 
+" insert mode jj = Esc
+inoremap jj <Esc>
+
 " clear the highlighted search result
 nnoremap <Leader>sc :nohlsearch<CR>
 

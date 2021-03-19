@@ -66,6 +66,9 @@ vnoremap L $
 vnoremap H ^
 nnoremap ; :
 
+" insert model jj = <ESC>
+inorema jj <Esc>
+
 " copy and paste
 noremap <Leader>y "*y
 noremap <Leader>p "*p
