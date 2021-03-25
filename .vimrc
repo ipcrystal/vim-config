@@ -52,6 +52,13 @@ set softtabstop=4                " insert mode tab and backspace use 4 spaces "
 " set cursorcolumn
 set cursorline
 
+" search config
+set nohlsearch
+set incsearch
+set smartcase
+set ignorecase
+
+
 set paste
 
 " vim文件类型设置
