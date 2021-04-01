@@ -1,5 +1,4 @@
 "==========================================
-" Author  : winterfell
 " Email   : mimotronik@gmail.com
 " Desc    : ideavim config
 "==========================================
@@ -30,6 +29,7 @@ nnoremap ; :
 
 " insert mode jj = Esc
 inoremap jj <Esc>
+inoremap kk <Esc>
 
 " clear the highlighted search result
 nnoremap <Leader>sc :nohlsearch<CR>
@@ -98,6 +98,7 @@ nnoremap gu :action GotoSuperMethod<CR>
 " Go to declaration
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gl :action GotoDeclaration<CR>
+nnoremap <Leader>k :action GotoDeclaration<CR>
 
 " global find
 nnoremap <Leader>f :action FindInPath<CR>
@@ -134,3 +135,7 @@ nnoremap \R :action Run<cr>
 nnoremap \d :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
 nnoremap \c :action CheckStyleCurrentFileAction<cr>
+
+" collapse and expand
+nnoremap zc :action CollapseRegionRecursively<CR>
+nnoremap zo :action ExpandRegionRecursively<CR>
