@@ -6,7 +6,7 @@
 
 " set leader key
 nnoremap <SPACE> <Nop>
-let mapleader = "\<SPACE>"
+let mapleader = " "
 
 " 开启鼠标支持
 set mouse=a
@@ -80,3 +80,47 @@ nnoremap <leader>sc :noh<CR>
 " Quit normal mode
 nnoremap <Space>q  :wq!<CR>
 nnoremap <Space>Q  :qa!<CR>
+
+
+autocmd BufNewFile *.php exec ":call SetPhpTitle()"
+func SetPhpTitle()
+  call setline(1, "<?php")
+  call setline(2, "\/**")
+  call setline(3, "* FileName: ".$file_path_name)
+  call setline(4, "* CreateDateTime: ".$now_date_time)
+  call setline(5, "*/")
+  call setline(6, "")
+endfunction
+
+
+autocmd BufNewFile *.sh exec ":call SetBashTitle()"
+func SetBashTitle()
+    call setline(1, "#!/bin/bash")
+    call setline(2, "")
+endfunction
+
+
+autocmd BufNewFile *.xml exec ":call SetXmlTitle()"
+func SetXmlTitle()
+    call setline(1, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
+    call setline(2, "")
+endfunction
+
+
+" 光标定位到末行
+autocmd BufNewFile * normal G
+
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'easymotion/vim-easymotion'
+
+call plug#end()
