@@ -51,8 +51,8 @@ noremap <space>p "*p
 noremap <space>P "*P
 
 " Quit normal mode
-nnoremap <space>q  :wq!<CR>
-nnoremap <space>Q  :qa!<CR>
+" nnoremap <Leader>q  :wq!<CR>
+" nnoremap <space>Q  :qa!<CR>
 " nnoremap <space>q :action CloseContent<cr>
 " nnoremap <space>Q :action ReopenClosedTab<cr>
 
@@ -60,6 +60,8 @@ nnoremap <space>Q  :qa!<CR>
 " nnoremap <Leader>ve :e ~/.ideavimrc<CR>
 " nnoremap <Leader>vw :w!<CR>
 " nnoremap <Leader>vs :source ~/.ideavimrc<CR>
+
+nnoremap <Leader>q  :action QuickJavaDoc<CR>
 
 " back and forward
 nnoremap gp :action Back<CR>
