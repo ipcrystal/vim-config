@@ -6,7 +6,7 @@
 
 " set leader key
 nnoremap <SPACE> <Nop>
-let mapleader = "\<SPACE>"
+let mapleader = " "
 
 " search config
 set nohlsearch
