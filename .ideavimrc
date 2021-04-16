@@ -30,7 +30,7 @@ nnoremap ; :
 
 " insert mode jj = Esc
 inoremap jj <Esc>
-inoremap kk <Esc>
+" inoremap kk <Esc>
 
 " clear the highlighted search result
 nnoremap <Leader>sc :nohlsearch<CR>
