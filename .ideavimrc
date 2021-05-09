@@ -22,8 +22,8 @@ set history=1000
 set surround
 
 " basic key mapping
-nnoremap L $
-nnoremap H ^
+noremap L $
+noremap H ^
 vnoremap L $
 vnoremap H ^
 nnoremap ; :
@@ -133,7 +133,10 @@ nnoremap <Leader>n :action GotoClass<CR>
 nnoremap <Leader>e :action GotoNextError<CR>
 
 " find usage
-nnoremap U :action FindUsages<CR>
+" nnoremap u :action findusages<cr>
+
+" Redo
+nnoremap U :action $Redo<cr>
 
 " plugin AceJump
 nnoremap <Leader>j :action AceAction<CR>
