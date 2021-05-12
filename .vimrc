@@ -67,8 +67,8 @@ filetype plugin on
 filetype indent on
 
 " basic key mapping
-nnoremap L $
-nnoremap H ^
+noremap L $
+noremap H ^
 vnoremap L $
 vnoremap H ^
 nnoremap ; :
