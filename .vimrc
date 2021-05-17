@@ -152,6 +152,9 @@ endfunction
 " 光标定位到末行
 autocmd BufNewFile * normal G
 
+"==========================================
+" vim plugin config
+"==========================================
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
