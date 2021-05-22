@@ -108,6 +108,7 @@ nnoremap gl :action GotoDeclaration<CR>
 
 " EditorCompleteStatement ctrl + shift + enter
 nnoremap <Leader>k :action EditorCompleteStatement<CR>
+nnoremap <CR> :action EditorCompleteStatement<CR>
 
 " global find
 nnoremap <Leader>f :action FindInPath<CR>
@@ -147,6 +148,7 @@ nnoremap <space>b :action ToggleLineBreakpoint<cr>
 nnoremap \r :action RunClass<cr>
 nnoremap \R :action Run<cr>
 nnoremap \d :action DebugClass<cr>
+nnoremap \\ :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
 nnoremap \c :action CheckStyleCurrentFileAction<cr>
 
