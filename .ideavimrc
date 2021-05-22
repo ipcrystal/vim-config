@@ -30,6 +30,7 @@ nnoremap ; :
 
 " insert mode jj = Esc
 inoremap jj <Esc>
+inoremap jk <Esc>
 " inoremap kk <Esc>
 
 " clear the highlighted search result
