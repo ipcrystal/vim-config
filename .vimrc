@@ -9,7 +9,7 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 " 开启鼠标支持
-set mouse=a
+" set mouse=a
 
 " nocompatible 用于关闭 compatible 表示不与 Vi 兼容
 set nocompatible                " don't bother with vi compatibility "
