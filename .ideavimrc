@@ -35,7 +35,6 @@ sethandler <C-Y> a:ide
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
 
-
 " set leader key
 nnoremap <SPACE> <Nop>
 let mapleader = " "
